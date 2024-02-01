@@ -1,7 +1,5 @@
-class Solution {
-public:
-    bool isPowerOfTwo(long long int n) {
-        return(n!=0)&&((n&(n-1))==0);
-
-    }
-};
+class Solution { public: bool isPowerOfTwo(int n)
+ { if(n <= 0) 
+ return false;
+  int bits = __builtin_popcount(n);
+   return bits == 1; } };
